@@ -4,10 +4,17 @@
 /* All */
 *{
     box-sizing: border-box;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s;  /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 2s
+}
+
+/* On-load Animation */
+@keyframes fadein {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 /* Html */
@@ -26,6 +33,15 @@ body{
     /* background-image: linear-gradient(#858585, white); */
     /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
     background: linear-gradient(180deg, #354243 0%, #354243 50%,  #6c6946 100% );
+}
+
+.underline-title{
+    height: 2px;
+    width: 50px;
+    background-color: #c2c2c2;
+    padding: 0%;
+    display: flex;
+    margin: -20px auto 20px auto;
 }
 
 /* Skills & About-me */
@@ -66,7 +82,7 @@ body{
 }
 
 strong{
-    font-weight: 500 !important;
+    font-weight: 500;
 }
 
 /* Header */
@@ -88,17 +104,23 @@ header{
 }
 h1.logo {
     font-family: 'Sacramento', sans-serif;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 100;
     margin: 0px;
     padding: 0px;
     color: #559ba4;
 }
-@media(max-width:350px){
+@media(max-width:380px){
     h1.logo{
-        font-size: 38px;
+        font-size: 45px;
     }
 }
+@media(max-width:350px){
+    h1.logo{
+        font-size: 40px;
+    }
+}
+
 nav li{
     display: inline-block;
     margin: 5px;
@@ -146,7 +168,6 @@ section.default{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
     font-size: 1.2em;
     height: 100vh;
 }
@@ -155,39 +176,35 @@ section.default{
         padding-top: 33vh;
     }
 }
+
 @media(min-width: 370px){
     section.default{
         font-size: 1.3em;
     }
 }
-
 @media(min-width: 600px){
     section.default{
         font-size: 1.4em;
     }
 }
-
 @media(min-width: 800px){
+    section.default{
+        font-size: 1.45em;
+    }
+}
+@media(min-width: 900px){
     section.default{
         font-size: 1.5em;
     }
 }
-
-@media(min-width: 900px){
+@media(min-width: 1450px){
     section.default{
         font-size: 1.6em;
     }
 }
-
-@media(min-width: 1450px){
-    section.default{
-        font-size: 1.7em;
-    }
-}
-
 @media(min-width: 1920px){
     section.default{
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
 }
 
@@ -197,6 +214,7 @@ section.default{
     margin: 0 auto;
     padding: 0;
     opacity: .8;
+    color: white;
 }
 .container h1{
     font-weight: 400;
@@ -271,8 +289,9 @@ section.default{
 
 /* About me Div */
 .about-me-container{
-    height: 100%;
     display: flex;
+    margin: 0%;
+    padding: 0%;
 }
 .about-me-text{
     width: 50%;
@@ -318,9 +337,8 @@ hr{
     height: 1px;
 }
 
-/* Copyright font-weight */
+/* Copyright */
 div.copyright{
-    font-weight: 300;
 	font-size: 1.1rem;
 }
 
@@ -399,52 +417,4 @@ svg{
 svg:hover,
 svg:focus{
     color: #c2c2c29f;
-}
-
-/* Strong elements in h2 */
-h2 > strong{
-    margin: 0;
-    padding: 0;
-}
-.underline-title{
-    height: 2px;
-    width: 50px;
-    background-color: #c2c2c2;
-    padding: 0%;
-    display: flex;
-    margin: -20px auto 20px auto;
-}
-
-/* On-load Animation */
-@keyframes fadein {
-    from {
-        opacity: 0.4;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0.4;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0.4;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0.4;
-    }
-    to {
-        opacity: 1;
-    }
 }
