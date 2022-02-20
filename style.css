@@ -112,12 +112,12 @@ h1.logo {
     padding: 0px;
     color: #559ba4;
 }
-@media(max-width:380px){
+@media(max-width:450px){
     h1.logo{
         font-size: 45px;
     }
 }
-@media(max-width:350px){
+@media(max-width:370px){
     h1.logo{
         font-size: 40px;
     }
