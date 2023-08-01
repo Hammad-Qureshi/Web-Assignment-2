@@ -25,13 +25,6 @@ hr{
   margin: 25px auto 25px auto;
 }
 
-/* 
-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-} */
-
 .button{
   display: inline-block;
   background-color: hsl( 250 , 66% , 75% );
@@ -56,52 +49,25 @@ button {
 }
 
 .content{
-  /* padding: 2rem 4rem; */
   background-color: #151C28;
-  padding: 20px 40px 40px 40px;
+  padding: 25px 40px 50px 40px;
   border-radius: 1.25rem;
 }
 
-/* @media screen and (max-width: 980px){
-  .content{
-    padding: auto;
-  }
-} */
-
 @media screen and (max-width: 811px){
-  h1{
-    font-size: 28px;
+  .container{
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 617px){
-  h1{
-    font-size: 24px;
+  .container{
+    width: 70%;
   }
 }
 
-@media screen and (max-width: 488px){
-  h1{
-    font-size: 22px;
-  }
-
-  p{
-    font-size: 14px;
-  }
-
-  .button{
-    padding: 10px 12px;
-    font-size: 14px;
-  }
-
-  .content{
-    padding: 15px 20px 30px 20px;
+@media screen and (max-width: 580px){
+  .container{
+    width: 80%;
   }
 }
-
-/* 
-@media screen and (max-width: 550px){
-  h1{
-    font-size: 20px;
-  }
-} */
