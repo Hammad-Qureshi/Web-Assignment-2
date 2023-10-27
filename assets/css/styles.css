@@ -890,15 +890,6 @@ body.light-theme{
   font-size: var(--smaller-font-size);
 }
 
-/*=============== COFFEE ===============*/
-
-.bmc-btn-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
   width: .6rem;
